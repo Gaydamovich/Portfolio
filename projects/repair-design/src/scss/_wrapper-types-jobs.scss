@@ -1,0 +1,18 @@
+@import "utils/mixins";
+@import "utils/variables";
+
+
+.wrapper-types-jobs {
+  padding: 1px;
+  height: auto;
+  background: linear-gradient( white 45%, black 25%, black 30%);
+  @media screen and (max-width: 992px) {
+    background: black;
+  }
+}
+
+.template-two {
+  @media screen and (max-width: 992px) {
+    margin-bottom: 50px;
+  }
+}

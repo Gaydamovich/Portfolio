@@ -1,0 +1,183 @@
+@import "utils/mixins";
+@import "utils/variables";
+
+
+.wrapper-work-stages {
+  padding: 1px 1px 20px 1px;
+  width: 100%;
+  background-color: black;
+}
+
+.slider-six-steps {
+  width: 86%;
+  margin: 20px auto;
+  background-color: black;
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+
+  .subtitle {
+    font-family: FuturaDemiC;
+    font-size: 15px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  .slogan {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: $main_color;
+  }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  &__column-1 {
+    margin-top: 90px;
+    &_row-1 {
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      text-transform: uppercase;
+      color: white;
+      margin-bottom: 20px;
+    }
+    &_row-2 {
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 23px;
+      text-transform: uppercase;
+      color: $main_color;
+      margin-bottom: 20px;
+    }
+    &_row-3 {
+      font-family: FuturaBookC;
+      font-size: 15px;
+      line-height: 25px;
+      color: white;
+      margin-bottom: 20px;
+      p:nth-child(1) {
+        margin-bottom: 10px;
+      }
+    }
+    &_row-4 {
+      width: 300px;
+      margin: 70px auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .circle {
+        width: 9.50px;
+        height: 9.50px;
+        border-radius: 50%;
+        background-color: white;
+        opacity: 0.4;
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  &__column-2 {
+
+    &_slides {
+
+      .slides-line {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+    }
+    &_img {
+      margin-top: 40px;
+    }
+  }
+}
+
+.block-slide {
+  div:nth-child(1) {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.4;
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+
+  div:nth-child(2) {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  div:nth-child(3) {
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+}
+
+.our-team {
+  color: white;
+  width: 100%;
+  display: flex;
+  margin: 100px auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 992px) {
+    margin-top: 200px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  &__logo {
+    @include flex();
+    flex-direction: column;
+    &_caption {
+      font-family: 'Yeseva One', arial;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &_vectors {
+      margin-top: 13px;
+      width: 114px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__description {
+    margin-top: 25px;
+    font-family: FuturaBookC;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,92 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.wrapper-header {
+  padding-top: 1.7%;
+  padding-bottom: 1.7%;
+  color: white;
+  width: 100%;
+  .header-content {
+    max-height: 37px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1256px;
+    width: 89%;
+    //border: 1px solid $main_color;
+  }
+  .logo-description {
+    color: #E3B873;
+    font-size: 0.87rem;
+    min-width: 179px;
+    text-transform: uppercase;
+    font-family: FuturaBookC;
+    //border: 1px solid red;
+    h1 {
+      font-weight: 900;
+    }
+  }
+  .navigation-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //border: 1px solid red;
+    font-family: FuturaBookC;
+    font-size: 0.87rem;
+    text-transform: uppercase;
+    &--item {
+      margin-right: 2em;
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+      & > a:hover {
+        color: $main_color;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .link-number-phone {
+    cursor: pointer;
+    min-width: 130px;
+    color: $main_color;
+    font-family: FuturaDemiC;
+    p {
+      text-decoration: underline;
+    }
+  }
+
+  .button-request-a-call {
+    @include flex();
+    width: 161px;
+    height: 37px;
+    text-transform: uppercase;
+    background: $main_color;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    &:hover {
+      cursor: pointer;
+      background-color: #e3a72f;
+      color: darkred;
+    }
+    p {
+      font-family: FuturaDemiC;
+      font-size: 13px;
+    }
+    @media screen and (max-width: 1250px) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1250px) {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+}
+
+
+
+
+

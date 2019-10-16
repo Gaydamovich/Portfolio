@@ -1,0 +1,101 @@
+@import "utils/mixins";
+@import "utils/variables";
+
+
+.wrapper-location {
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url("../assets/images/fon-3.png");
+  background-size: cover;
+  .contacts-inform {
+    width: 700px;
+    height: 100px;
+    margin: 30px auto 0 auto;
+    &--locality {
+      color: white;
+      font-family: 'Yeseva One', arial;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      color: $main_color;
+      text-align: center;
+      text-transform: uppercase;
+
+    }
+    &--messengers-icons {
+      @include flex();
+      margin-top: 15px;
+      svg:nth-child(1) {
+        margin-right: 15px;
+      }
+    }
+  }
+  #map {
+    margin: 60px auto;
+    width: 70%;
+    height: 450px;
+    background-color: grey;
+    @media screen and (max-width: 992px){
+      margin: 40px auto;
+      width: 90%;
+      height: 400px;
+    }
+    @media screen and (max-width: 768px){
+      margin: 40px auto;
+      width: 90%;
+      height: 400px;
+      background-color: grey;
+    }
+    @media screen and (max-width: 480px){
+      height: 350px;
+      margin-top: 55px;
+    }
+    @media screen and (max-width: 375px){
+      height: 300px;
+    }
+
+  }
+
+  @media screen and (max-width: 768px){
+    background-image: none;
+    background-color: black;
+    padding-bottom: 20px;
+    .contacts-inform {
+      width: 90%;
+      height: 100px;
+      margin: 20px auto 35px auto;
+      &--locality {
+        color: white;
+        font-family: 'Yeseva One', arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 24px;
+        color: $main_color;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      &--messengers-icons {
+        @include flex();
+        margin-top: 15px;
+        svg:nth-child(1) {
+          margin-right: 15px;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+
+.flex-reverse {
+  @media screen and (max-width: 768px){
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

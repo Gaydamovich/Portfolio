@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "FuturaBookC";
+    src: url(./assets/fonts/futurabookc.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "FuturaDemiC";
+    src: url(./assets/fonts/Futurademic.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(./assets/fonts/Proxima.ttf) format("truetype");
+}

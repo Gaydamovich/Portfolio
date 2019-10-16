@@ -1,0 +1,26 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+// sidebar
+
+.side-bar {
+  @include flex();
+  width: 5%;
+  height: 707px;
+  .flex-link {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: rotate(90deg);
+    margin-top: -80px;
+    p > a{
+      color: $main_color;
+      text-transform: uppercase;
+      margin-right: 15px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+}

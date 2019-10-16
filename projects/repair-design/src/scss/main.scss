@@ -1,0 +1,27 @@
+@import "layout/header";
+@import "base/reset";
+@import "layout/footer";
+@import "components/form";
+@import "components/sidebar";
+@import "utils/mixins";
+@import "utils/variables";
+@import "wrapper-one";
+@import "wrapper-second-block";
+@import "wrapper-video-form";
+@import "wrapper-types-of-repair";
+@import "wrapper-your-fantasies";
+@import "wrapper-design-project";
+@import "wrapper-types-jobs";
+@import "wrapper-work-stages";
+@import "wrapper-team";
+@import "wrapper-experience";
+@import "wrapper-location";
+
+
+.wrapper-repair-design-project {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: gray;
+  overflow: hidden;
+}

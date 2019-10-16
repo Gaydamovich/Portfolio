@@ -1,0 +1,271 @@
+@import "utils/mixins";
+@import "utils/variables";
+
+.wrapper-second-block {
+  background-color: black;
+  width: 100%;
+  padding-top: 1px;
+  position: relative;
+}
+
+.navigation-menu {
+  margin: 6% 0 0 40%;
+  width: 60%;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Yeseva One', cursive;
+  &--items {
+    display: flex;
+    justify-content: space-around;
+  }
+  &--item a{
+    color: rgba(255, 255, 255, 0.3);
+    &:hover {
+      color: $main_color;
+      text-decoration: underline;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.wrapper-content-slider {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.5%;
+  margin-bottom: 3.5%;
+  margin-left: 7%;
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    margin-left: 0px;
+  }
+}
+
+.description-block {
+  position: relative;
+  width: 32%;
+  font-size: 27px;
+  margin-top: 1.6666em;
+  margin-right: 1.185185em;
+  @media screen and (max-width: 1200px) {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  @media screen and (max-width: 992px) {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 23px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 22px;
+  }
+}
+
+.name-project {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: 'Yeseva One', cursive;
+  color: $main_color;
+  margin-bottom: 0.740em;
+  p {
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    width: 40%;
+    @media screen and (max-width: 1200px) {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  .after-line {
+    margin-top: 1.370em;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+}
+
+.description-project {
+  width: 100%;
+  font-family: FuturaBookC;
+  font-size: 0.666em;
+  line-height: 1.61111em;
+  color: white;
+  margin-bottom: 1.64444em;
+  @media screen and (max-width: 992px) {
+    text-align: center;
+  }
+}
+
+.wrapper-info-section {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.information-project {
+  @media screen and (max-width: 920px) {
+    display: none;
+  }
+}
+
+.information-project-hidden {
+  display: none;
+  @media screen and (max-width: 920px) {
+    display: block;
+    width: 90%;
+    margin: 2% auto;
+    font-size: 1.5em;
+  }
+}
+
+.block {
+  width: 50%;
+  font-size: 0.5555em;
+  color: white;
+  font-family: FuturaBookC;
+  margin-bottom: 1.66666em;
+}
+
+.gold {
+  text-transform: uppercase;
+  color: $main_color;
+  font-size: 1em;
+  font-family: 'Yeseva One', cursive;
+  margin-bottom: 0.55555em;
+}
+
+.slider-switch {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+  .circle {
+    width: 9.50px;
+    height: 9.50px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.4;
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+}
+
+.slider {
+  width: 62%;
+  overflow: hidden;
+  @media screen and (max-width: 992px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.slider-photo-project {
+  position: relative;
+}
+
+.photo {
+  display: flex;
+  overflow: hidden;
+  img {
+    width: 75%;
+    height: auto;
+  }
+  img:nth-child(2) {
+    margin-left: 15px;
+  }
+  @media screen and (max-width: 480px) {
+    img:nth-child(1) {
+      display: none;
+    }
+    img:nth-child(2) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+.button-slider {
+  @include flex();
+  position: absolute;
+  right: 0px;
+  top: 43.44%;
+  width: 52px;
+  height: 52px;
+  border: 1px solid $main_color;
+  background-color: $main_color;
+  border-radius: 50%;
+  &:hover {
+    cursor: pointer;
+    background-color: goldenrod;
+  }
+}
+
+.online-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Yeseva One', arial;
+  font-size: 20px;
+  line-height: 28px;
+  margin: auto;
+  &--caption {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.online-control-icons {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scroll-down {
+  @include flex();
+  position: absolute;
+  left: 0;
+  top: -45px;
+  width: 17.2%;
+  height: 97px;
+  background-color: black;
+  &--content {
+    display: flex;
+    p {
+      @include flex();
+      color: white;
+      font-size: 14px;
+      font-family: 'Yeseva One', cursive;
+      text-transform: uppercase;
+      margin-right: 15px;
+    }
+    .circle-button {
+      @include flex();
+      width: 27px;
+      height: 27px;
+      border: 1px solid $main_color;
+      border-radius: 50%;
+      color: $main_color;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+
+}
