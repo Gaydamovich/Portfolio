@@ -6,3 +6,77 @@
 body {
     background-color: rgb(46, 48, 50);
 }
+
+.wrapper-portfolio {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    padding: 40px 90px;
+    background-color: #fff;
+}
+
+.header__avatar {
+    margin-right: 90px;
+}
+
+.header__avatar img {
+    width: 250px;
+    height: auto;
+    border-radius: 80%;
+}
+
+.header__social-network {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.header__social-network_full-name {
+    font-family: 'Hepta Slab', serif;
+    font-size: 24px;
+    padding: 10px 30px;
+}
+
+.header__social-network_link {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.logo-git {
+    margin-right: 30px;
+}
+
+.link-git a {
+    font-family: 'Hepta Slab', serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: #0d0d0d;
+}
+
+.link-git a:hover {
+    color: #1dbfa2;
+}
+
+.header__social-network_page-links {
+    padding: 10px 30px;
+}
+
+.social-list li {
+    display: inline-block;
+}
+
+.social-list li a {
+    font-family: Sathu;
+    font-size: 18px;
+    color: #1dbfa2;
+    text-decoration: none;
+}
+
+span:hover {
+    color: #2286d6;
+}
