@@ -147,3 +147,114 @@ span:hover {
 .word-color {
     color: #fff;
 }
+
+/* projects block */
+
+.projects {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 90px;
+    background-color: #fff;
+}
+
+.section-name {
+    padding-bottom: 10px;
+    width: 300px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 22px;
+    border-bottom: 1px solid #1dbfa2;
+}
+
+.wrapper-slider {
+    width: 700px;
+    height: 400px;
+    margin: 60px auto;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.opacity {
+    display: none;
+}
+
+.image a {
+    position: relative;
+    display: block;
+}
+
+.image img{
+    width: 100%;
+    height: 400px;
+}
+
+.description-project {
+    position: absolute;
+    bottom: 5px;
+    left: 175px;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    background-color: #ffffff;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-project__name {
+    margin-top: 20px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 19px;
+    color: #0d0d0d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.description-project__list {
+    margin: 20px auto;
+    width: 150px;
+    text-align: center;
+    font-family: Sathu;
+    font-size: 16px;
+    color: gray;
+}
+
+.description-project__list li{
+    margin-bottom: 10px;
+}
+
+.btn-slide {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #1dbfa2;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 1s;
+}
+
+.btn-slide:hover {
+    cursor: pointer;
+    background-color: #bf7c56;
+    opacity: 1;
+}
+
+.btn-back {
+    left: 0;
+    top: 43%;
+}
+
+.btn-next{
+    right: 0;
+    top: 43%;
+}

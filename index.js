@@ -7,3 +7,35 @@ button.onclick = () => {
     list.classList.toggle('hidden')
     list.classList.toggle('show')
 }
+
+// slider
+
+let images = document.querySelectorAll('.image')
+let current = 0
+
+function slider() {
+    for (let i = 0; i < images.length; i++) {
+        images[i].classList.add('opacity')
+    }
+    images[current].classList.remove('opacity')
+}
+
+document.querySelector('.btn-next').onclick = () => {
+    slider()
+    if ( current + 1 == images.length ) {
+        current = 0
+    } else {
+        current++
+    }
+
+}
+
+document.querySelector('.btn-back').onclick = () => {
+    slider()
+    if ( current - 1 == -1 ) {
+        current = images.length - 1
+    } else {
+        current--
+    }
+}
+
