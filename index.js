@@ -39,3 +39,16 @@ document.querySelector('.btn-back').onclick = () => {
     }
 }
 
+// btn-up
+
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 200) {
+        document.querySelector('.btn-up').style.display = 'flex'
+    } else if (window.pageYOffset < 200) {
+        document.querySelector('.btn-up').style.display = 'none'
+    }
+});
+
+document.querySelector('.btn-up').onclick = () => {
+    window.scrollTo(0, 0)
+}

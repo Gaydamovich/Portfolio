@@ -7,6 +7,27 @@ body {
     background-color: rgb(46, 48, 50);
 }
 
+.btn-up {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #1dbfa2;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 70px;
+    top: 650px;
+    display: none;
+    opacity: 0.8;
+    transition: all ease 1s;
+}
+
+.btn-up:hover {
+    cursor: pointer;
+    border: 5px solid #bf7c56;
+    opacity: 1;
+}
+
 .wrapper-portfolio {
     width: 1024px;
     margin: 0 auto;
