@@ -7,6 +7,10 @@ body {
     background-color: rgb(46, 48, 50);
 }
 
+html {
+    font-size: 24px;
+}
+
 .btn-up {
     width: 50px;
     height: 50px;
@@ -29,22 +33,23 @@ body {
 }
 
 .wrapper-portfolio {
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .header {
     display: flex;
-    padding: 40px 90px;
+    padding: 1.66rem 3.75rem;
     background-color: #fff;
 }
 
 .header__avatar {
-    margin-right: 90px;
+    margin-right: 3.75rem;
 }
 
 .header__avatar img {
-    width: 250px;
+    width: 10.41rem;
     height: auto;
     border-radius: 80%;
 }
@@ -53,28 +58,28 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 15px 0;
+    padding: 0.6rem 0;
 }
 
 .header__social-network_full-name {
     font-family: 'Hepta Slab', serif;
-    font-size: 24px;
-    padding: 10px 30px;
+    font-size: 1rem;
+    padding: 0.4rem 1.25rem;
 }
 
 .header__social-network_link {
     display: flex;
     align-items: center;
-    padding: 10px 30px;
+    padding: 0.4rem 1.25rem;
 }
 
 .logo-git {
-    margin-right: 30px;
+    margin-right: 1.25rem;
 }
 
 .link-git a {
     font-family: 'Hepta Slab', serif;
-    font-size: 24px;
+    font-size: 1rem;
     text-decoration: none;
     color: #0d0d0d;
 }
@@ -84,7 +89,7 @@ body {
 }
 
 .header__social-network_page-links {
-    padding: 10px 30px;
+    padding: 0.4rem 1.25rem;
 }
 
 .social-list li {
@@ -93,7 +98,7 @@ body {
 
 .social-list li a {
     font-family: Sathu;
-    font-size: 18px;
+    font-size: 0.75rem;
     color: #1dbfa2;
     text-decoration: none;
 }
@@ -108,7 +113,7 @@ span:hover {
     width: 100%;
     position: relative;
     box-sizing: border-box;
-    padding: 40px 90px;
+    padding: 1.66rem 3.75rem;
     background-color: #fff;
 }
 
@@ -116,7 +121,7 @@ span:hover {
     display: flex;
     align-items: center;
     font-family: 'Maven Pro', sans-serif;
-    font-size: 22px;
+    font-size: 0.9166rem;
 }
 
 .expansion-panel p {
@@ -133,40 +138,45 @@ span:hover {
     font-weight: bold;
 }
 
+.btn-plus {
+    width: 30px;
+    height: 30px;
+    border-left: 1px solid #1dbfa2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.btn-minus {
+    width: 30px;
+    height: 30px;
+    border-left: 1px solid #1dbfa2;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    display: none;
+}
+
 .btn:hover {
     cursor: pointer;
     color: rgba(52, 52, 52, 0.82);
 }
 
 .wrapper-list {
-    background-color: rgb(46, 48, 50);
     display: none;
-    border-left: 4px solid gray;
-    position: absolute;
     width: 60%;
-    box-shadow: 21px 8px 38px -6px rgba(0,0,0,0.75);
-    z-index: 800;
-}
-
-.hidden {
-    display: none;
 }
 
 .show {
     display: block;
-    transition: all ease 1s;
 }
 
 .education-list__item {
-    color: #959595;
+    color: #0d0d0d;
     font-family: 'Maven Pro', sans-serif;
-    font-size: 18px;
+    font-size: 0.75rem;
     display: block;
     margin: 20px;
-}
-
-.word-color {
-    color: #fff;
 }
 
 /* projects block */
@@ -174,7 +184,7 @@ span:hover {
 .projects {
     width: 100%;
     box-sizing: border-box;
-    padding: 20px 90px;
+    padding: 0.833rem 3.75rem;
     background-color: #fff;
 }
 
@@ -182,44 +192,49 @@ span:hover {
     padding-bottom: 10px;
     width: 300px;
     font-family: 'Maven Pro', sans-serif;
-    font-size: 22px;
+    font-size: 0.9166rem;
     border-bottom: 1px solid #1dbfa2;
 }
 
-.wrapper-slider {
-    width: 700px;
-    height: 400px;
-    margin: 60px auto;
-    position: relative;
+/* slider swiper */
+
+.container {
+    margin: 4rem auto;
+    width: 90%;
+    height: 350px;
+    display: flex;
 }
 
-.image {
-    width: 100%;
+.content {
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+}
+
+.content__item {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 350px;
 }
 
-.opacity {
-    display: none;
-}
-
-.image a {
+.content__item a {
     position: relative;
     display: block;
 }
 
-.image img{
+.content__item img{
     width: 100%;
-    height: 400px;
+    height: 350px;
 }
 
 .description-project {
     position: absolute;
     bottom: 5px;
-    left: 175px;
+    left: 22%;
     padding: 20px;
-    width: 300px;
+    width: 50%;
     height: 200px;
     background-color: #ffffff;
     opacity: 0.8;
@@ -232,7 +247,7 @@ span:hover {
 .description-project__name {
     margin-top: 20px;
     font-family: 'Maven Pro', sans-serif;
-    font-size: 19px;
+    font-size: 0.79rem;
     color: #0d0d0d;
     font-weight: bold;
     text-transform: uppercase;
@@ -243,7 +258,7 @@ span:hover {
     width: 150px;
     text-align: center;
     font-family: Sathu;
-    font-size: 16px;
+    font-size: 0.666rem;
     color: gray;
 }
 
@@ -251,31 +266,77 @@ span:hover {
     margin-bottom: 10px;
 }
 
+.hidden-slide {
+    display: none;
+}
+
 .btn-slide {
-    position: absolute;
-    width: 30px;
-    height: 50px;
-    font-size: 20px;
-    background-color: #1dbfa2;
-    color: wheat;
+    width: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all ease 1s;
-}
-
-.btn-slide:hover {
+    background-color: #1dbfa2;
+    opacity: 0.8;
     cursor: pointer;
-    background-color: #bf7c56;
+}
+
+.btn-slide:hover  {
     opacity: 1;
+    background-color: #1dbfa2;
 }
 
-.btn-back {
-    left: 0;
-    top: 43%;
+/* adaptive */
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 20px;
+    }
+
+    .btn-slide {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
 }
 
-.btn-next{
-    right: 0;
-    top: 43%;
+@media screen and (max-width: 720px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    html {
+        font-size: 17px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__avatar {
+        margin-right: 0;
+    }
+
+    .header__avatar img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .header__social-network {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    html {
+        font-size: 16px;
+    }
 }
