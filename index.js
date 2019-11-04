@@ -1,3 +1,5 @@
+console.log(window.innerWidth)
+
 let buttonPlus = document.querySelector('.btn-plus')
 let buttonMinus = document.querySelector('.btn-minus')
 

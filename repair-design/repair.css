@@ -39,18 +39,18 @@ iframe {
 .btn-desktop {
     display: none;
     position: fixed;
-    top: 600px;
+    top: 70vh;
     right: 20px;
 }
 
 .btn-mobile {
     position: fixed;
-    top: 600px;
+    top: 70vh;
     right: 20px;
 }
 
 .btn-back {
     position: fixed;
-    top: 670px;
+    top: 80vh;
     right: 20px;
 }

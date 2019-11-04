@@ -1,3 +1,11 @@
+
+if (window.innerWidth === 375) {
+    document.querySelector('div').style.width = '375px'
+    document.querySelector('.btn-desktop').style.display = 'none'
+    document.querySelector('.btn-mobile').style.display = 'none'
+}
+
+
 document.querySelector('.btn-back').onclick = () => {
     window.open('../index.html')
 }
