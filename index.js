@@ -1,5 +1,3 @@
-//expansion panel
-
 let buttonPlus = document.querySelector('.btn-plus')
 let buttonMinus = document.querySelector('.btn-minus')
 
